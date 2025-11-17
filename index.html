@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Personal - Estudiante de Sistemas de Información</title>
+    <!-- Este es el head del documento HTML5, donde se incluyen metadatos y título -->
+</head>
+<body>
+    <!-- El body contiene todo el contenido visible de la página -->
+
+    <header>
+        <!-- El header contiene el nombre, subtítulo y avatar -->
+        <h1>Kleber Samir Diaz Arreaga</h1>
+        <p>Estudiante de Sistemas de Información y Apasionada por la Tecnología</p>
+        <img src="/img/Carnet foto.jpg" alt="Imagen de KLeber Diaz Arreaga">
+    </header>
+
+    <nav>
+        <!-- El nav incluye enlaces internos para navegación dentro de la página -->
+        <ul>
+            <li><a href="#sobremi">Sobre mí</a></li>
+            <li><a href="#intereses">Intereses y Logros</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Main contiene el contenido principal de la página -->
+
+        <section id="sobremi">
+            <!-- Sección sobre mí con descripción personal y etiquetas de énfasis -->
+            <h2>Sobre mí</h2>
+            <p>Hola, soy <strong>Kleber Diaz Arreaga</strong>, un estudiante de <em>Sistemas de Información</em> en la universidad. Me apasiona el mundo de la tecnología, especialmente el desarrollo de software y la gestión de datos. Disfruto <mark>aprendiendo nuevas herramientas</mark> y aplicándolas en proyectos reales para resolver problemas cotidianos.</p>
+        </section>
+
+        <section id="intereses">
+            <!-- Lista de intereses o logros con íconos -->
+            <h2>Intereses y Logros</h2>
+            <ul>
+                <li>Llegar a ser uno de los mejores</li>
+                <li>Interés en programar y en la música </li>
+                <li>Desarrollo de aplicaciones web y móviles</li>
+                <li>Seguridad informática y ciberseguridad</li>
+            </ul>
+        </section>
+
+        <section id="habilidades">
+            <!-- Tabla de habilidades usando table, thead, tbody, tfoot -->
+            <h2>Habilidades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Habilidad</th>
+                        <th>Nivel</th>
+                        <th>Años de Experiencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML y CSS</td>
+                        <td>Intermedio</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Básico</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Básico</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Básico</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de habilidades destacadas: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="multimedia">
+            <!-- Sección multimedia con un audio de presentación personal -->
+            <h2>Multimedia</h2>
+            <audio controls>
+                <source src="/multimedia/Personal.ogg" type="audio/mpeg">
+                Tu navegador no soporta el elemento audio.
+            </audio>
+            <p>Audio de presentación personal.</p>
+        </section>
+
+        <section id="contacto">
+            <!-- Formulario de contacto con validación -->
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="18" max="100" required><br><br>
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecciona</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select><br><br>
+
+                <label for="intereses">Intereses:</label>
+                <textarea id="intereses" name="intereses" rows="4" cols="50" placeholder="Describe tus intereses..."></textarea><br><br>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer con derechos, enlaces a redes sociales y año actual -->
+        <p>&copy; 2025 Kleber Diaz Arreaga. Todos los derechos reservados.</p>
+        <p>Sígueme en: 
+            <a href="https://www.facebook.com/kleber.diaz.90" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/a.kleberdiaz/" target="_blank">Instagram</a> | 
+            <a href="https://github.com/KlSADiAr-creator" target="_blank">GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
